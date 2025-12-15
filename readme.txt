@@ -2,4 +2,5 @@ This is a Project Risk Management System based on python utilizing Gemini 2.0 fl
 
 streamlit run filename.py
 
-Dependencies: streamlit , googlegenerativeai, fpdf
+
+Dependencies: streamlit , google generative ai, fpdf
