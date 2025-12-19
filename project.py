@@ -4,7 +4,7 @@ from fpdf import FPDF
 import google.generativeai as genai
 
 # --- Gemini API Configuration ---
-GEMINI_API_KEY = "AIzaSyA43TpsIHDxyw97yYlxV-YiczkvytGYcr4"  # Replace with your actual Gemini API Key
+GEMINI_API_KEY = "AIzaSyA43TpsIHDxyw97yYlxV-YiczkvytGYcr4"  
 genai.configure(api_key=GEMINI_API_KEY)
 MODEL_NAME = "gemini-2.0-flash"
 
@@ -147,3 +147,4 @@ if st.button("📥 Download Chat History as PDF"):
 
     with open(pdf_file, "rb") as file:
         st.download_button("Download Chat as PDF", data=file, file_name="chat_history.pdf", mime="application/pdf")
+
